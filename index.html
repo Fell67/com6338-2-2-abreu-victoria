@@ -1,7 +1,61 @@
-# Assignment 2 Quiz Game
-In this assignment, you’ll build a short quiz game using JavaScript. The quiz will ask the user a series of true/false questions and display their final score as a percentage.
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Instructions</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      :root {
+        --primary-color: hsl(270, 54%, 15%);
+        --text: #eee;
+        --button-bg: rebeccapurple;
+        --button-border: hsl(270, 54%, 50%);
+      }
+      body {
+        max-width: 800px;
+        margin: auto;
+        background-color: var(--primary-color);
+        color: var(--text);
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1, h2, h3 {
+        text-align: center;
+        margin: 48px 0;
+        letter-spacing: 1.5px;
+      }
+      button, p {
+        margin: 48px 0;
+      }
+      button {
+        padding: 12px 24px;
+        background-color: rebeccapurple;
+        border: solid 2px var(--button-border);
+        border-radius: 4px;
+        color: var(--text);
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 200ms;
+        margin: auto;
+        display: block;
+      }
+      button:hover {
+        background-color: var(--button-border);
+      }
+      span.mono {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+</head>
+
+<body>
+  <h1>Quiz Assignment!</h1>
+  <button onclick="runQuiz()" id="start-quiz">Start Quiz</button>
+  <h2>Instructions</h2>
   <p>
     For this assignment, you will need to create a quiz game using JavaScript. The quiz should begin when the user clicks the "Start Quiz" button above. The quiz should ask the user true/false questions and calculate and display the final score at the end of the quiz.
   </p>
@@ -73,4 +127,11 @@ var questionsArr = [
     </ol>
   </p>
 
-Website URL: https://fell67.github.io/com6338-2-2-abreu-victoria/
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"
+    integrity="sha512-/Swpp6aCQ0smuZ+zpklJqMClcUlvxhpLf9aAcM7JjJrj2waCU4dikm3biOtMVAflOOeniW9qzaNXNrbOAOWFCw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+  <script src="tests.js"></script>
+</body>
+
+</html>
